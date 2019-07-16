@@ -3,7 +3,7 @@ This IBM i library contains useful CL wrapper commands to allow Node.js apps to 
 
 The main benefit of this wrapper is to be able to integrate Node.js applications on-the-fly with standard IBM i job streams.
 
-# Installing NODEONI library and creating PYRUN command objects
+# Installing NODEONI library and creating NODE command objects
 
 Download the **nodeoni.savf** save file from the selected releases page. 
 
