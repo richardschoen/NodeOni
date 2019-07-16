@@ -35,7 +35,8 @@ The following example calls a Node.js app named: hello.js from the /nodeapps dir
 
  ```
       NODE APPDIR('/nodeapps')          
-      CMD('node hello.js')            
+      CMD('node hello.js')
+      CCSID(37)
       DSPSTDOUT(*YES)    
       LOGSTDOUT(*NO)     
       PRTSTDOUT(*NO)     
@@ -47,6 +48,8 @@ The following example calls a Node.js app named: hello.js from the /nodeapps dir
 **APPDIR** - The IFS directory location for the Node.js app. **Ex: /nodeapps**
 
 **CMD** - Node.js command. **Ex: node hello.js**
+
+**CCSID** - When using the iToolkit component for command access, I originally had some issues with CL commands not working correctly. However I don't currently remember exactly why. This may have been solved, however I recommend still passing a value of 37 unless you are in a non US country. If you set to *SAME, the CCSID will stay the same as your current job with no change.
 
 **DSPSTDOUT** - Display the outfile contents. Nice when debugging. 
 
