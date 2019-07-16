@@ -50,7 +50,7 @@ The following example calls a Node.js app named: hello.js from the /nodeapps dir
 
 **DSPSTDOUT** - Display the outfile contents. Nice when debugging. 
 
-**LOGSTDOUT** - Place STDOUT log entries into the current jobs job log. Use this if you want the log info in the IBM i joblog.
+**LOGSTDOUT** - Place STDOUT log entries into the current jobs job log. Use this if you want the log info in the IBM i joblog. All STDOUT entries are written as CPF message: **NOD9898**
 
 **PRTSTDOUT** - Print STDOUT to a spool file. Use this if you want a spool file of the log output.
 
