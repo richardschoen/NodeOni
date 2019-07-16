@@ -36,7 +36,6 @@ The following example calls a Node.js app named: hello.js from the /nodeapps dir
  ```
       NODE APPDIR('/nodeapps')          
       CMD('node hello.js')            
-      PYVERSION(3)
       DSPSTDOUT(*YES)    
       LOGSTDOUT(*NO)     
       PRTSTDOUT(*NO)     
