@@ -58,3 +58,12 @@ The following example calls a Node.js app named: hello.js from the /nodeapps dir
 **PRTSTDOUT** - Print STDOUT to a spool file. Use this if you want a spool file of the log output.
 
 **DLTSTDOUT** - This option insures that the STDOUT IFS temp files get cleaned up after processing. All IFS log files get created in the /tmp/mono directory.
+
+helloword.py sample Python script to echo parms and test PYRUN if you need one
+Enter the following statements into a Python file in the IFS. Name it helloworld.py
+
+#Hello World hello.js script to echo hello
+                                                       
+// Console will print the message  
+console.log('Hello World');        
+console.log('From Node.JS');       
