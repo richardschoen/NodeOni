@@ -62,8 +62,10 @@ The following example calls a Node.js app named: hello.js from the /nodeapps dir
 helloword.py sample Python script to echo parms and test PYRUN if you need one
 Enter the following statements into a Python file in the IFS. Name it helloworld.py
 
-#Hello World hello.js script to echo hello
-                                                       
+# Hello World hello.js script to echo hello
+                                
+```                                
 // Console will print the message  
 console.log('Hello World');        
 console.log('From Node.JS');       
+```
