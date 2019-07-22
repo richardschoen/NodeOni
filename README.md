@@ -29,6 +29,34 @@ Build the NODEONI commands
 
 `CALL PGM(NODEONI/SRCBLDC)`
 
+# Installing NODEONI library via wget command and creating NODE command objects
+
+Download the **nodeoni.savf** save file from the selected releases page. 
+
+https://github.com/richardschoen/NodeOni/releases
+
+Upload the **nodeoni.savf** to the IFS and place it in **/tmp/nodeoni.savf**
+
+Run the following commands to copy the save file from github into a SAVF object
+
+`CRTSAVF FILE(QGPL/NODEONI)`
+
+`/QOpenSys/pkgs/bin/wget https://github.com/richardschoen/NodeOni/releases/download/V1.01/nodeoni.savf --no-check-certificate -O  /qsys.lib/qgpl.lib/monoi.file`
+
+Restore the NODEONI library
+
+`RSTLIB SAVLIB(NODEONI) DEV(*SAVF) SAVF(QGPL/NODEONI)`
+
+Build the NODEONI commands
+
+`ADDLIBLE NODEONI`
+
+`CRTCLPGM PGM(NODEONI/SRCBLDC) SRCFILE(NODEONI/SOURCE) SRCMBR(SRCBLDC) REPLACE(*YES)`
+
+`CALL PGM(NODEONI/SRCBLDC)`
+
+
+
 # Using the NODE CL command to call a Node.js application
 
 The following example calls a Node.js app named: hello.js from the /nodeapps directory and passes the program a valid node command line via the NODE CL command. 
