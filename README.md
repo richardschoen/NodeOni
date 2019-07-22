@@ -29,19 +29,14 @@ Build the NODEONI commands
 
 `CALL PGM(NODEONI/SRCBLDC)`
 
-# Installing NODEONI library via wget command and creating NODE command objects
-
-Download the **nodeoni.savf** save file from the selected releases page. 
-
-https://github.com/richardschoen/NodeOni/releases
-
-Upload the **nodeoni.savf** to the IFS and place it in **/tmp/nodeoni.savf**
+# Installing NODEONI library via wget and creating NODE command objects
 
 Run the following commands to copy the save file from github into a SAVF object
 
 `CRTSAVF FILE(QGPL/NODEONI)`
 
-`/QOpenSys/pkgs/bin/wget https://github.com/richardschoen/NodeOni/releases/download/V1.01/nodeoni.savf --no-check-certificate -O  /qsys.lib/qgpl.lib/monoi.file`
+From QSHELL/QPTERM or BASH run:
+`/QOpenSys/pkgs/bin/wget https://github.com/richardschoen/NodeOni/releases/download/V1.01/nodeoni.savf --no-check-certificate -O  /qsys.lib/qgpl.lib/nodeoni.file`
 
 Restore the NODEONI library
 
