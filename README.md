@@ -37,7 +37,8 @@ Run the following commands to copy the save file from github into a SAVF object
 
 From QSHELL/QPTERM or BASH run:
 
-`/QOpenSys/pkgs/bin/wget https://github.com/richardschoen/NodeOni/releases/download/V1.01/nodeoni.savf --no-check-certificate -O  /qsys.lib/qgpl.lib/nodeoni.file`
+`/QOpenSys/pkgs/bin/wget https://github.com/richardschoen/NodeOni/releases/download/V1.01/nodeoni.savf 
+--no-check-certificate -O  /qsys.lib/qgpl.lib/nodeoni.file`
 
 Restore the NODEONI library
 
