@@ -86,8 +86,8 @@ The following example calls a Node.js app named: hello.js from the /nodeapps dir
 
 **DLTSTDOUT** - This option insures that the STDOUT IFS temp files get cleaned up after processing. All IFS log files get created in the /tmp/mono directory.
 
-helloword.py sample Python script to echo parms and test PYRUN if you need one
-Enter the following statements into a Python file in the IFS. Name it helloworld.py
+hello.js sample Node script to echo parms and test the NODE command.
+Enter the following statements into a js file in the IFS. Name it hello.js
 
 # Hello World hello.js script to echo hello
                                 
